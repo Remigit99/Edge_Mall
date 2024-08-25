@@ -1,0 +1,103 @@
+.nav {
+  background-color: rgb(241, 241, 241);
+  width: 100vw;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.mobileNav{
+    display: none;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: grid; */
+  /* grid-template-columns: 0.5fr 2fr 1fr; */
+  margin: 0 auto;
+  width: 80%;
+  /* gap: 5rem; */
+}
+
+.navLogo{
+    display: flex;
+    flex: 1;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 2;
+}
+
+.navContainer ul {
+  display: flex;
+  gap: 3rem;
+}
+
+.navRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menuLogo{
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+.navContainer{
+    width: 96%;
+}
+
+    .menuLogo{
+        display: block;
+    }
+
+    .desktopNav{
+        display: none;
+    }
+
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navLinks ul a {
+    padding: 0.5rem 4rem 0.5rem 5px;
+    border-bottom: 1px solid rgb(218, 217, 217);
+  }
+
+  .navRight {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
