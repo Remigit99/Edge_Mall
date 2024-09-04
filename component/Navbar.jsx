@@ -9,6 +9,10 @@ const Navbar = () => {
   const [userLoggedIn, setUserLoggedIn] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
+  const toggleMenu = () =>{
+    setShowMenu(!showMenu)
+  }
+
   return (
     <nav className={styles.nav}>
       <div className={styles.navContainer}>
@@ -20,7 +24,7 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
 
-        <div className={`${styles.navLinks} ${styles.desktopNav}`}>
+        <div className={`${styles.navLinksDesk} ${styles.desktopNav}`}>
           <ul>
             {mainNavLinks.map(({ id, title, path }) => (
               <Link href={`${path}`} key={id}>
@@ -43,8 +47,8 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Nav */}
-        {showMenu ? (
-          <div className={`${styles.navLinks} ${styles.mobileNav}`}>
+        {showMenu && (
+          <div className={`${styles.navLinksMobile} ${styles.mobileNav}`}>
             <ul>
               {mainNavLinks.map(({ id, title, path }) => (
                 <Link href={`${path}`} key={id}>
@@ -65,13 +69,11 @@ const Navbar = () => {
               )}
             </div>
           </div>
-        ) : (
-          ""
-        )}
+        ) }
 
         <span
           className={styles.menuLogo}
-          onClick={(prev) => setShowMenu(!prev)}
+          onClick={toggleMenu}
         >
           <Image
             src="/assets/icons/menu-alt.svg"

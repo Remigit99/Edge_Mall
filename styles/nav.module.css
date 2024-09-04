@@ -15,6 +15,11 @@
 
 .mobileNav{
     display: none;
+    background-color: red;
+}
+
+.navLinksMobile{
+  display: none;
 }
 
 .navContainer {
@@ -33,7 +38,7 @@
     flex: 1;
 }
 
-.navLinks{
+.navLinksDesk{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +76,16 @@
         display: none;
     }
 
-  .navLinks {
+    .navLinksDesk{
+      display: none;
+    }
+
+  /* .mobileNav{
+    display: flex;
+    color: red;
+    flex-direction: column;
+  } */
+  .navLinksMobile {
     position: absolute;
     top: 100%;
     right: 0;
@@ -81,13 +95,14 @@
     gap: 0;
   }
 
-  .navLinks ul {
+  .navLinksMobile ul {
     display: flex;
     flex-direction: column;
     gap: 0;
+
   }
 
-  .navLinks ul a {
+  .navLinksMobile ul a {
     padding: 0.5rem 4rem 0.5rem 5px;
     border-bottom: 1px solid rgb(218, 217, 217);
   }
