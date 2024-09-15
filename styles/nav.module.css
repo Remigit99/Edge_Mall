@@ -1,5 +1,6 @@
 .nav {
   background-color: rgb(241, 241, 241);
+  background-color: #F46F4D;
   width: 100vw;
   height: 4rem;
   position: fixed;
@@ -8,9 +9,17 @@
   left: 0;
   display: grid;
   place-items: center;
+  color: white;
   /* display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
+    #ED7A5D
+    #EF9E86
+    #EF9E86(50%)
+    #0B0F28
+    #3F4146
+    #656565
+    */
 }
 
 .mobileNav{
@@ -107,9 +116,14 @@
     border-bottom: 1px solid rgb(218, 217, 217);
   }
 
-  .navRight {
+  .navRightMobile {
     display: flex;
     flex-direction: column;
+  }
+
+  .navRightMobile a{
+    padding: 0.5rem 4rem 0.5rem 5px;
+    border-bottom: 1px solid rgb(218, 217, 217);
   }
 }
 

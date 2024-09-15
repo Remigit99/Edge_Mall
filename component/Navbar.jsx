@@ -59,7 +59,7 @@ const Navbar = () => {
 
             <div>
               {userLoggedIn ? (
-                <div className={styles.navRight}>
+                <div className={styles.navRightMobile}>
                   <Link href="/account">Account</Link>
                   <Link href="/cart">Cart</Link>
                   <Link href="/logout">Logout</Link>
