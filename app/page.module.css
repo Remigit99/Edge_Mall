@@ -1,6 +1,14 @@
 .main {
   padding-top: 6rem;
   min-height: 100vh;
+ 
+
+}
+
+.btn{
+  /* background-color: red; */
+  font-size: 1rem;
+
 }
 
 

@@ -2,6 +2,8 @@ import Image from "next/image";
 import style from "../app/globals.css"
 import styles from "./page.module.css";
 import Link from "next/link";
+import h2 from "@/public/assets/images/hoodie2.jpg"
+
 
 export default function Home() {
   return (
@@ -15,14 +17,21 @@ export default function Home() {
           affordable price just for you!
         </p>
 
-        <div>
-          <Link href="/all-products"
-          className={style.btns}>
+        <div >
+          <Link href="/all-products"  className={styles.btn}>
           Shop
           </Link>
         </div>
       </div>
-      <div className={styles.homeHeaderRight}></div>
+      <div className={styles.homeHeaderRight}>
+
+        <Image
+        src={h2}
+        alt="hoodie"
+        width={500}
+        height={500}
+        />
+      </div>
       </header>
       </div>
     
